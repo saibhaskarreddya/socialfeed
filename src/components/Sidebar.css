@@ -1,0 +1,46 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px ;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  color: #1da1f2;
+}
+
+.postBtn {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user {
+  margin-top: 20px;
+  font-size: 14px;
+  color: gray;
+}

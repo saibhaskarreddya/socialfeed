@@ -1,0 +1,10 @@
+.feed {
+  flex: 1;
+  background-color: black;
+  color: white;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  padding: 20px;
+  min-height: 100vh;
+}
+
