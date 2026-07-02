@@ -12,12 +12,14 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth",router);
 
-mongoose.connect(process.env.mongo_url).then(()=>{
-    console.log("Mongodb connected")
-}).catch((err)=>{
-    console.log("connection error")
-})
-
+mongoose
+  .connect(process.env.mongo_url)
+  .then(() => {
+    console.log("MongoDB Connected");
+  })
+  .catch((err) => {
+    console.error("MongoDB Error:", err.message);
+  });
 app.get("/",(req,res)=>{
     res.send("Server running");
 })
