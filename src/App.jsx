@@ -1,25 +1,23 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Rightpanel from './components/Rightpanel'
-import Feed from './components/Feed'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Explore from "./pages/Explore";
+import Profile from "./pages/Profile";
+import Notifications from "./pages/Notifications";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div style={{ display: "flex" }}>
-      <Sidebar />
-      <div style={{ flex: 1, background: "#111" }}>
-        <Feed/>
-        {/* Main content later */}
-      </div>
-      <Rightpanel/>
-    </div>
-  )
+    <Routes>
+
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/explore" element={<Explore />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/notify" element={<Notifications />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

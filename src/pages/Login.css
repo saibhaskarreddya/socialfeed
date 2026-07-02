@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.login{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #07111f,
+        #050608,
+        #160a24
+    );
+
+    color:white;
+}
+
+.loginContainer{
+    width:100%;
+    max-width:460px;
+    text-align:center;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    margin:auto;
+
+    background:linear-gradient(
+        135deg,
+        #53b2ff,
+        #6b5cff
+    );
+
+    border-radius:15px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+}
+
+.tabs button.active {
+  background: #111;
+  color: white;
+  font-weight: bold;
+}
+
+.loginContainer h1{
+    margin-top:15px;
+    font-size:48px;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#9ca3af;
+    margin-bottom:35px;
+}
+
+.card{
+    background:#111315;
+
+    border:1px solid #262626;
+
+    border-radius:18px;
+
+    padding:28px;
+}
+
+.tabs{
+    display:flex;
+    background:#1c1d20;
+    border-radius:30px;
+    padding:4px;
+    margin-bottom:25px;
+}
+
+.tabs button{
+    flex:1;
+    border:none;
+    background:transparent;
+    color:#999;
+    padding:12px;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:15px;
+    white-space: nowrap;
+}
+
+.tabs .active{
+    background:#111;
+    color:white;
+}
+
+.inputGroup{
+    text-align:left;
+    margin-bottom:18px;
+}
+
+.inputGroup label{
+    display:block;
+    margin-bottom:8px;
+    color:#bbb;
+    font-size:14px;
+}
+
+.inputGroup input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #333;
+    background:#0b0c0e;
+    color:white;
+    outline:none;
+}
+
+.inputGroup input:focus{
+    border-color:#3b82f6;
+}
+
+.loginBtn{
+    width:100%;
+    margin-top:10px;
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#3b82f6;
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.loginBtn:hover{
+    background:#2563eb;
+}
+
+.footerText{
+    margin-top:25px;
+    color:#9ca3af;
+}
+
+.footerText span{
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}

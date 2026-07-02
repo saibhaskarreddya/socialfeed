@@ -1,12 +1,12 @@
 import React from "react";
 import "./Rightpanel.css";
-
+import { FiSearch } from "react-icons/fi";
 
 function Rightpanel() {
     return (
         <div className="Rightpanel">
             <div className="searchbox">
-                <span>🔍</span>
+              <FiSearch color="#71767b" size={18} />
                 <input type="text" placeholder="Search" />
             </div>
 
@@ -42,6 +42,50 @@ function Rightpanel() {
                     <p>25k Posts</p>
                 </div>
             </div>
+
+            <div className="followCard">
+  <h2>Who to follow</h2>
+
+  <div className="followItem">
+    <div className="followLeft">
+      <div className="followAvatar">⚓</div>
+
+      <div>
+        <h4>Grace H.</h4>
+        <p>@grace</p>
+      </div>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+  <div className="followItem">
+    <div className="followLeft">
+      <div className="followAvatar">🧠</div>
+
+      <div>
+        <h4>Alan T.</h4>
+        <p>@alan</p>
+      </div>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+  <div className="followItem">
+    <div className="followLeft">
+      <div className="followAvatar">🛠️</div>
+
+      <div>
+        <h4>Indie Maker</h4>
+        <p>@maker</p>
+      </div>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+</div>
         </div>
     )
 }

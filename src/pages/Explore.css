@@ -1,0 +1,19 @@
+.explorePage{
+    display:flex;
+    background:#000;
+    color:white;
+    height:100vh;
+}
+
+.exploreCenter{
+    flex:1;
+    overflow-y:auto;
+    border-left:1px solid #2f3336;
+    border-right:1px solid #2f3336;
+}
+
+.exploreCenter h1{
+    padding:18px 24px;
+    font-size:34px;
+    border-bottom:1px solid #2f3336;
+}

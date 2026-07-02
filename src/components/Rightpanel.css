@@ -1,50 +1,162 @@
 .Rightpanel {
-    width: 300px;
+    width: 340px;
     height: 100vh;
-    background-color: black;
-    color: white;
-    padding: 20px;
+    position: sticky;
+    top: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 18px;
+    background: #000;
+}
+.Rightpanel::-webkit-scrollbar{
+    display:none;
 }
 
+.Rightpanel{
+    scrollbar-width:none;
+}
 .searchbox {
     display: flex;
-    padding: 10px;
-    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
 
-    background-color: #222;
+    background: #202327;
 
+    padding: 14px 18px;
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+}
+
+.searchbox span {
+    color: #71767b;
+    font-size: 18px;
 }
 
 .searchbox input {
-    width: 100%;
     border: none;
     outline: none;
     background: transparent;
     color: white;
+    width: 100%;
+    font-size: 15px;
+}
+
+.searchbox input::placeholder {
+    color: #71767b;
+}
+
+.innr {
+    background: #16181c;
+    border-radius: 18px;
+    padding: 20px;
+    color: white;
+}
+
+.innr h1 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.items {
+    padding: 12px 0;
+    border-bottom: 1px solid #2f3336;
+    cursor: pointer;
+}
+
+.items:last-child {
+    border-bottom: none;
+}
+
+.items:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+.items p:first-child {
+    color: #71767b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.items h3 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.items p:last-child {
+    color: #71767b;
     font-size: 14px;
 }
-.innr{
-    /* width: 200px; */
-   border-radius: 15px;
-     background-color: #1d1c1c;
 
-    color: aqua;
-    padding:0px 8px;
+.followCard{
+    margin-top:20px;
+    background:#16181c;
+    border-radius:18px;
+    padding:20px;
+    color: white;
 }
 
-.items{
-    /* padding: 10px; */
-    
-    
-  border-bottom: 1px solid #333;
-  gap: 80px;
+.followCard h2{
+    margin-bottom:18px;
+    font-size:32px;
 }
 
-.items p{
-    font-size: 12px;
-    color: gray;
-    padding: 0;
+.followItem{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
 }
-.items h3{
-    padding: 0;
+
+.followItem:last-child{
+    margin-bottom:0;
+}
+
+.followLeft{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.followAvatar{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:#2f3336;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:20px;
+}
+
+.followLeft h4{
+    margin:0;
+    font-size:18px;
+}
+
+.followLeft p{
+    margin-top:3px;
+    color:#71767b;
+    font-size:14px;
+}
+
+.followItem button{
+    border:none;
+    background:white;
+    color:black;
+
+    padding:10px 22px;
+    border-radius:25px;
+
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.followItem button:hover{
+    background:#e6e6e6;
 }
