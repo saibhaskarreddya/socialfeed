@@ -12,6 +12,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth",router);
 
+const PORT = process.env.port || 5000;
+
+
 mongoose
   .connect(process.env.mongo_url)
   .then(() => {
